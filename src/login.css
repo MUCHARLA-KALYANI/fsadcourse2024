@@ -1,0 +1,11 @@
+.card{
+    width: fit-content;
+    margin-left: 500px;
+    margin-top: 150px;
+    justify-content: center;
+    padding: 20px;
+    font-size: 20px;
+}
+.btn{
+    margin-left: 180px;
+}
