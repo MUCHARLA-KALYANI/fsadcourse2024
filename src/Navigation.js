@@ -4,8 +4,8 @@ import { globalContext } from "./App";
 
 
 export default function Navigation() {
-    const{globalIsLogin, globalsetIsLogin}=useContext(globalContext);
-    const{globalCount,setGlobalCount}=useContext(globalContext);
+    const{ globalsetIsLogin}=useContext(globalContext);
+    const{globalCount}=useContext(globalContext);
     const navigate=useNavigate();
     const logout=()=>{
        
