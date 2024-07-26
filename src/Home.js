@@ -4,7 +4,7 @@ import Navigation from "./Navigation";
 import { globalContext } from "./App";
 
 export default function Home() {
-    const { globalIsLogin, globalsetIsLogin } = useContext(globalContext);
+    const { globalIsLogin } = useContext(globalContext);
 
     return (
         <div>
