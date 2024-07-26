@@ -11,7 +11,7 @@ export default function Home() {
             {globalIsLogin ? (
                 <div>
                     <Navigation />
-                    Welcome to the home page
+                    Welcome to the thread aura
                 </div>
             ) : (
                 <Twelve />
