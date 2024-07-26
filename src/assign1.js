@@ -1,5 +1,6 @@
 import React from "react";
 import "./assign1.css";
+import Navigation from "./Navigation";
 
 const data = [
     {
@@ -46,6 +47,8 @@ const data = [
 
 export default function Cards() {
     return (
+        <>
+        <Navigation/>
         <div className="cards-container">
             {data.map((d, i) => 
                 <div className="card-container" key={i}>
@@ -58,5 +61,6 @@ export default function Cards() {
                 </div>
             )}
         </div>
+        </>
     );
 }

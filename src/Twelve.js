@@ -3,31 +3,14 @@ import Login from "./login";
 import Register from "./register";
 
 
+export default function Twelve() {
+    const [showLogin, setShowLogin] = useState(true);
 
-export default function Twelve(){
-
-
-
- const[login,setLogin]=useState(true);
-// const[register,setRegister]=useState('');
-
-const Home=()=>{
-    setLogin(true);
-}
-const Reg=()=>{
-    setLogin(false);
-}
-
-
-    return(
+    return (
         <div>
-            <button  onClick={Home}>Login</button>
-            <button  onClick={Reg}>Register</button>
-            {
-                login?
-                <div> <Login/></div>:
-                <div> <Register/></div>
-            }
+            <button onClick={() => setShowLogin(true)}>Login</button>
+            <button onClick={() => setShowLogin(false)}>Register</button>
+            {showLogin ? <Login /> : <Register />}
         </div>
     );
 }

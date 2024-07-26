@@ -2,10 +2,12 @@
 import "./assign2.css";
 import Eight from "./Eight";
 import Nine from "./Nine";
+import Navigation from "./Navigation";
 
 export default function Assign2(){
     return(
         <div>
+          <Navigation/>
       <div className="c1">
        <span> <img src="../Strawberry-Tarts.png" alt="" className="img1" /></span>
        <span><h1>Product Description</h1>

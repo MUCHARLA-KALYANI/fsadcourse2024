@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from 'axios';
-
+import Navigation from "./Navigation";
 
 export default function DataFetching() {
 
@@ -18,7 +18,8 @@ export default function DataFetching() {
 
     return (
         <div>
-            <table class="table table-sm table-dark">
+            <Navigation/>
+            <table className="table table-sm table-dark">
                 <thead className="thead-dark">
                     <tr>
                         <th scope="col">id</th>
