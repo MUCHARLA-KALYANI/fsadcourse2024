@@ -6,7 +6,7 @@ import { globalContext } from "./App";
 
 export default function Assign3() {
     const [data, setData] = useState([]);
-    const { globalListObject, globalsetListObject } = useContext(globalContext);
+    const { globalsetListObject } = useContext(globalContext);
 
     useEffect(() => {
         const fetchMyData = async () => {
@@ -20,7 +20,7 @@ export default function Assign3() {
             globalsetListObject(resData);
         };
         fetchMyData();
-    }, []);
+    }, [globalsetListObject]); // Add globalsetListObject to the dependency array
 
     return (
         <>

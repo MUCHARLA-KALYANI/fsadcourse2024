@@ -5,8 +5,8 @@ export default function Login() {
     const cid = useRef(null);
     const pwd = useRef(null);
     const [msg, setMsg] = useState('');
-    const { globalIsLogin, globalsetIsLogin} = useContext(globalContext);
-    const{userDetails,setUserDetails}=useContext(globalContext);
+    const {  globalsetIsLogin} = useContext(globalContext);
+    const{userDetails}=useContext(globalContext);
 
     useEffect(() => {
         cid.current.focus();

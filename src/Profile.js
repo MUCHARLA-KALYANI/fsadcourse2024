@@ -1,12 +1,9 @@
 
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { globalContext } from "./App";
 import Navigation from "./Navigation";
 function Profile(){
-    const{userDetails,setUserDetails}=useContext(globalContext);
-    useEffect(()=>{
-        const name = localStorage.getItem()
-    })
+    const{userDetails}=useContext(globalContext);
     
     return(
         <div>

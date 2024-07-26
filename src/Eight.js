@@ -4,7 +4,7 @@ import { globalContext } from "./App";
 
 export default function Eight({ index }) {
     const { globalCount, setGlobalCount } = useContext(globalContext);
-    const { globalUserCart, globalsetUserCart } = useContext(globalContext);
+    const { globalsetUserCart } = useContext(globalContext);
     const { globalListObject } = useContext(globalContext);
     const [count, setCount] = useState(0);
     const handleIncrement = () => {

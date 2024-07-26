@@ -1,9 +1,9 @@
 import DataFetching from "./DataFetching";
 import Assign3 from "./assign3";
 import Cards from "./assign1";
-import Twelve from "./Twelve";
+
 import {BrowserRouter,Routes,Route} from "react-router-dom";
-import Navigation from "./Navigation";
+
 import Home from "./Home";
 import { createContext, useState } from "react";
 import Profile from "./Profile";
